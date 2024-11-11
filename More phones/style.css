@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap"); /* استيراد خط Lalezar من جوجل */
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap"); /* استيراد خط Tajawal من جوجل */
+* {
+  margin: 0; /* إزالة الهوامش الافتراضية لجميع العناصر */
+  padding: 0; /* إزالة الحشوات الافتراضية لجميع العناصر */
+  box-sizing: border-box; /* تضمين الحشوات والحدود ضمن العرض والارتفاع */
+}
+body {
+  font-family: "Tajawal", sans-serif; /* تعيين الخط الافتراضي للنص */
+}
+
+/* Navbar styling */
+nav {
+  display: flex; /* استخدام المرن لتوزيع العناصر بشكل أفقي */
+  justify-content: space-between; /* توزيع العناصر بشكل متساوٍ بين الطرفين */
+  align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+  height: 10vh; /* تعيين ارتفاع شريط التنقل */
+  max-width: 1366px; /* تعيين العرض الأقصى لشريط التنقل */
+  margin: 0 auto; /* مركزية شريط التنقل */
+  padding: 0 5rem; /* إضافة حشوة على الجانبين */
+}
+nav .logo {
+  display: flex; /* استخدام المرن لتوزيع العناصر بشكل أفقي */
+  font-size: 2rem; /* تعيين حجم الخط للشعار */
+  align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+}
+nav .logo i {
+  color: #6e0aef; /* تعيين لون الأيقونة */
+  padding-left: 0.75rem; /* إضافة حشوة على اليسار */
+}
+nav .bars-menu {
+  display: none; /* إخفاء قائمة الأشرطة في الشاشات الكبيرة */
+}
+nav .logo h4 {
+  font-family: "Lalezar", cursive; /* تعيين خط العنوان */
+}
+nav .nav-items {
+  display: flex; /* استخدام المرن لتوزيع العناصر بشكل أفقي */
+  list-style-type: none; /* إزالة النقاط من القائمة */
+}
+nav .nav-items .nav-item {
+  padding: 0 1rem; /* إضافة حشوة بين عناصر القائمة */
+}
+nav .nav-link {
+  text-decoration: none; /* إزالة الخط السفلي من الروابط */
+  color: #4e547e; /* تعيين لون النص للروابط */
+  font-size: 1.4rem; /* تعيين حجم النص للروابط */
+}
+nav .nav-link:hover {
+  color: #6e0aef; /* تغيير لون النص عند التمرير */
+}
+
+/*  Phones section */
+.newest-phones {
+  padding-top: 5rem; /* إضافة حشوة علويّة لقسم الهواتف */
+}
+.newest-phones .phones-section {
+  max-width: 1366px; /* تعيين العرض الأقصى للقسم */
+  margin: 0 auto; /* مركزية القسم */
+  padding: 0 5rem; /* إضافة حشوة على الجانبين */
+  display: flex; /* استخدام المرن لتوزيع العناصر بشكل عمودي */
+  flex-direction: column; /* توزيع العناصر بشكل عمودي */
+}
+
+.phones-section h4 {
+  color: #6e0aef; /* تعيين لون النص للعناوين */
+  font-size: 1.6rem; /* تعيين حجم النص للعناوين */
+  margin-bottom: 2rem; /* إضافة هامش أسفل العناوين */
+}
+.phones-section .phones {
+  display: grid; /* استخدام الشبكة لتوزيع العناصر */
+  grid-template-columns: 1fr 1fr 1fr; /* توزيع العناصر في ثلاثة أعمدة */
+  justify-content: flex-start; /* محاذاة العناصر إلى اليسار */
+}
+
+.phones .phone {
+  margin: 2rem 0; /* إضافة هامش رأسي للعناصر */
+  max-width: 300px; /* تعيين العرض الأقصى للعناصر */
+  display: flex; /* استخدام المرن لتوزيع العناصر بشكل عمودي */
+  flex-direction: column; /* توزيع العناصر بشكل عمودي */
+  align-items: center; /* محاذاة العناصر أفقيًا في المنتصف */
+}
+.phone img {
+  margin-bottom: 1rem; /* إضافة هامش أسفل الصور */
+  margin-top: 1rem; /* إضافة هامش أعلى الصور */
+  /* width: 100%;
+  height: 250px; */
+}
+
+.phone img:hover {
+  scale: 1.1; /* تكبير الصور عند التمرير */
+  cursor: pointer; /* تغيير شكل المؤشر عند التمرير */
+}
+.phone h3 {
+  font-size: 1.6rem; /* تعيين حجم النص للعناوين */
+}
+
+.phones-section button {
+  width: 15rem; /* تعيين عرض الزر */
+  margin-bottom: 1rem; /* إضافة هامش أسفل الزر */
+  align-self: center; /* مركزية الزر */
+}
+/* الازرار */
+.btn {
+  width: 10rem; /* تعيين عرض الزر */
+  margin-top: 3rem; /* إضافة هامش أعلى الزر */
+  border-radius: 0.5rem; /* تعيين نصف قطر الحواف */
+  outline: none; /* إزالة إطار التركيز الافتراضي */
+  border: none; /* إزالة الحدود */
+  padding: 0.75rem 1.5rem; /* إضافة حشوة داخل الزر */
+  background-color: #6e0aef; /* تعيين لون خلفية الزر */
+}
+.btn:hover {
+  background-color: #7d22f3; /* تغيير لون خلفية الزر عند التمرير */
+  cursor: pointer; /* تغيير شكل المؤشر عند التمرير */
+}
+.btn a {
+  text-decoration: none; /* إزالة الخط السفلي من الروابط داخل الزر */
+  color: #ffffff; /* تعيين لون النص داخل الزر */
+  font-size: 1.4rem; /* تعيين حجم النص داخل الزر */
+}
+
+/* Footer */
+footer {
+  background-color: #f8f7fc; /* تعيين لون خلفية التذييل */
+  height: 15vh; /* تعيين ارتفاع التذييل */
+  margin-top: 5rem; /* إضافة هامش أعلى التذييل */
+  padding: 2rem 0; /* إضافة حشوة عمودية للتذييل */
+}
+
+.footer-section {
+  display: flex; /* استخدام المرن لتوزيع العناصر بشكل عمودي */
+  flex-direction: column; /* توزيع العناصر بشكل عمودي */
+  align-items: center; /* محاذاة العناصر أفقيًا في المنتصف */
+  max-width: 1366px; /* تعيين العرض الأقصى للقسم */
+  margin: 0 auto; /* مركزية القسم */
+  padding: 0 5rem; /* إضافة حشوة على الجانبين */
+}
+
+.footer-section p {
+  font-size: 1.2rem; /* تعيين حجم النص */
+  margin-bottom: 1rem; /* إضافة هامش أسفل النص */
+}
+
+.footer-section .socials {
+  margin-bottom: 1rem; /* إضافة هامش أسفل العناصر */
+}
+.footer-section .socials i {
+  padding: 0 0.5rem; /* إضافة حشوة حول الأيقونات */
+  font-size: 1.6rem; /* تعيين حجم الأيقونات */
+}
+.footer-section .socials i:hover {
+  color: #6e0aef; /* تغيير لون الأيقونات عند التمرير */
+  cursor: pointer; /* تغيير شكل المؤشر عند التمرير */
+}
+/* Responsive Design */
+@media (max-width: 1300px) {
+  * {
+    font-size: 85%; /* تقليص حجم النص لجميع العناصر */
+  }
+}
+@media (max-width: 1175px) {
+  * {
+    font-size: 80%; /* تقليص حجم النص لجميع العناصر */
+  }
+}
+@media (max-width: 1000px) {
+  * {
+    text-align: center; /* محاذاة النص إلى المنتصف */
+  }
+  .hero img {
+    display: none; /* إخفاء الصورة في قسم البطل */
+  }
+  .hero-section {
+    align-items: center; /* محاذاة العناصر عمودياً في المنتصف */
+    padding: 2rem 0rem; /* إضافة حشوة عمودية للقسم */
+    width: 50%; /* تعيين عرض القسم */
+  }
+  .hero .btn {
+    align-self: center; /* مركزية الزر */
+  }
+  .hero .content {
+    margin-top: 2rem; /* إضافة هامش أعلى المحتوى */
+  }
+  .features-section .qualities {
+    flex-wrap: wrap; /* جعل العناصر تلتف إلى الأسطر الجديدة */
+    justify-content: center; /* مركزية العناصر */
+  }
+  section.features .features-section {
+    align-items: center; /* محاذاة العناصر عمودياً في المنتصف */
+  }
+  .phones-section h4 {
+    align-self: center; /* مركزية النص */
+  }
+}
+@media (max-width: 660px) {
+  .hero-section .content h1 {
+    font-size: 2rem; /* تقليص حجم النص */
+  }
+  .phones-section {
+    align-items: center; /* محاذاة العناصر عمودياً في المنتصف */
+  }
+  .phones-section .phones {
+    grid-template-columns: 1fr 1fr; /* توزيع العناصر في عمودين */
+  }
+}
+@media (max-width: 504px) {
+  .phones-section .phones {
+    grid-template-columns: 1fr; /* توزيع العناصر في عمود واحد */
+  }
+  nav {
+    position: sticky; /* جعل شريط التنقل ثابتاً عند التمرير */
+    top: 0; /* تعيين المسافة العلوية للشريط */
+    width: 100%; /* تعيين عرض الشريط */
+  }
+  nav .bars-menu {
+    display: block; /* إظهار قائمة الأشرطة */
+    font-size: 3rem; /* تعيين حجم الخط */
+  }
+  nav .nav-items {
+    position: absolute; /* تعيين الشريط كنمط مطلق */
+    left: 0; /* تعيين المسافة اليسرى للشريط */
+    top: 10vh; /* تعيين المسافة العلوية للشريط */
+    display: none; /* إخفاء العناصر بشكل افتراضي */
+    flex-direction: column; /* توزيع العناصر بشكل عمودي */
+    width: 100%; /* تعيين عرض الشريط */
+    background-color: #7d22f3; /* تعيين لون خلفية الشريط */
+    padding: 2rem 0; /* إضافة حشوة عمودية للشريط */
+  }
+  nav .nav-items .nav-item {
+    margin: 1rem 0; /* إضافة هامش عمودي للعناصر */
+  }
+  nav .nav-items .nav-item a {
+    color: white; /* تعيين لون النص */
+  }
+  nav .nav-items.active {
+    display: flex; /* عرض العناصر عند التفاعل */
+  }
+}
